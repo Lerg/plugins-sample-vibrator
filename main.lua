@@ -4,19 +4,19 @@ local widget = require('widget')
 local vibrator = require('plugin.vibrator')
 
 --[[
-plugin.hasVibrator()
+vibrator.hasVibrator()
 
 Returns boolean, true if vibrator is present.
 
 
-plugin.vibrate(duration)
+vibrator.vibrate(duration)
 
 Vibrates for a specified duration.
 
 duration - integer, duration in milliseconds.
 
 
-plugin.vibrate(pattern, [repeat])
+vibrator.vibrate(pattern, [repeat])
 
 Vibrate with a given pattern. Pass in
 
@@ -24,7 +24,7 @@ pattern - table, an array of ints that are the durations for which to turn on or
 repeat - integer, To cause the pattern to repeat, pass the index into the pattern array at which to start the repeat, or -1 to disable repeating.
 
 
-plugin.cancel()
+vibrator.cancel()
 
 Cancel currently ongoing vibration.
 
