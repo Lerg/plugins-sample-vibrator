@@ -11,14 +11,14 @@ Returns boolean, true if vibrator is present.
 
 vibrator.vibrate(duration)
 
-Vibrates for a specified duration.
+Vibrate for a specified duration.
 
 duration - integer, duration in milliseconds.
 
 
 vibrator.vibrate(pattern, [repeat])
 
-Vibrate with a given pattern. Pass in
+Vibrate with a given pattern.
 
 pattern - table, an array of ints that are the durations for which to turn on or off the vibrator in milliseconds. The first value indicates the number of milliseconds to wait before turning the vibrator on. The next value indicates the number of milliseconds for which to keep the vibrator on before turning it off. Subsequent values alternate between durations in milliseconds to turn the vibrator off or to turn the vibrator on.
 repeat - integer, To cause the pattern to repeat, pass the index into the pattern array at which to start the repeat, or -1 to disable repeating.
